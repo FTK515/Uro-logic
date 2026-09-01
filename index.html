@@ -1,0 +1,152 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=yes">
+<meta name="theme-color" content="#1e5f91">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="URO logic by FTK">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-180.png"><title>URO logic by FTK — iPad PWA v34</title><style>
+:root{--blue:#1e5f91;--light:#edf6fc;--border:#d7e3eb;--ink:#17334a}*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f7f9;color:var(--ink)}header{height:64px;background:#fff;border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 18px;gap:14px}.logo{font-weight:750;font-size:20px;color:var(--blue)}.sub{font-size:13px;color:#718391}.app{display:flex;height:calc(100vh - 64px)}aside{width:260px;background:#fff;border-right:1px solid var(--border);padding:14px;overflow:auto}.search{width:100%;padding:11px 12px;border:1px solid var(--border);border-radius:10px;margin-bottom:12px}.cat{font-size:11px;font-weight:700;color:#80909c;margin:15px 4px 7px;text-transform:uppercase}.template{width:100%;text-align:left;border:0;background:#fff;padding:11px;border-radius:9px;cursor:pointer;font-size:14px}.template.active,.template:hover{background:var(--light);color:var(--blue);font-weight:650}main{flex:1;min-width:0;display:flex;flex-direction:column}.toolbar{min-height:60px;background:#fff;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:7px;padding:8px 12px;flex-wrap:wrap}.tool,.select{border:1px solid var(--border);background:#fff;border-radius:8px;padding:8px 10px;cursor:pointer;min-height:38px}.tool.active{background:var(--light);border-color:#9fc7e1;color:var(--blue);font-weight:650}.color{width:32px;height:32px;border-radius:50%;padding:0;border:2px solid #fff;box-shadow:0 0 0 1px #ccd7de;cursor:pointer;display:inline-block}.color[data-color="#d64b4b"]{background:#d64b4b}.color[data-color="#2367a5"]{background:#2367a5}.color[data-color="#20252a"]{background:#20252a}.color[data-color="#3c8b57"]{background:#3c8b57}.color[data-color="#f2c94c"]{background:#f2c94c}.color.active{box-shadow:0 0 0 2px var(--blue)}.spacer{flex:1}.pagebtn{border:1px solid var(--border);background:#fff;border-radius:8px;padding:7px 9px;cursor:pointer;font-size:12px}.pagebtn.active{background:var(--light);border-color:#9fc7e1;color:var(--blue);font-weight:650}.badge{padding:6px 10px;background:var(--light);border-radius:999px;color:var(--blue);font-size:12px}.canvas-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:10px;overflow:hidden;min-height:0}.sheet{position:relative;background:#fff;border:1px solid var(--border);box-shadow:0 4px 20px #0000000b;max-width:calc(100vw - 280px);max-height:calc(100vh - 180px);line-height:0;overflow:hidden}.sheet img{display:block;image-rendering:auto;-webkit-font-smoothing:antialiased;max-width:calc(100vw - 282px);max-height:calc(100vh - 182px);width:auto;height:auto;user-select:none;-webkit-user-drag:none}.sheet.turbt-anatomy img{width:min(calc(100vw - 300px),900px);max-width:none;height:auto;max-height:calc(100vh - 182px);object-fit:contain}.sheet.turbt-procedure img{width:min(calc(100vw - 300px),1100px);max-width:none;height:auto;max-height:calc(100vh - 182px);object-fit:contain}.sheet.turp-boo img{width:min(calc(100vw - 300px),1100px);max-width:none;height:auto;max-height:calc(100vh - 182px);object-fit:contain}.sheet.turp-bph img{width:min(calc(100vw - 300px),1100px);max-width:none;height:auto;max-height:calc(100vh - 182px);object-fit:contain}.sheet.turp-procedure img{width:min(calc(100vw - 300px),1200px);max-width:none;height:auto;max-height:calc(100vh - 182px);object-fit:contain}.sheet.turp-cbi img{width:min(calc(100vw - 300px),1000px);max-width:none;height:auto;max-height:calc(100vh - 182px);object-fit:contain}.sheet.rp-trocar img{width:min(calc(100vw - 300px),1100px);max-width:none;height:auto;max-height:calc(100vh - 182px);object-fit:contain}.sheet.rp-robot img{width:min(calc(100vw - 300px),1100px);max-width:none;height:auto;max-height:calc(100vh - 182px);object-fit:contain}.layer{position:absolute;inset:0;width:100%;height:100%}.draw{z-index:2;touch-action:none}.objects{z-index:3;pointer-events:none}.obj{position:absolute;pointer-events:auto;user-select:none;touch-action:none;cursor:move;transform-origin:50% 50%;will-change:transform,left,top,width,height;-webkit-backface-visibility:hidden;backface-visibility:hidden}.obj img{display:block;width:100%;height:100%;object-fit:fill;pointer-events:none}.handle{position:absolute;width:16px;height:16px;right:-8px;bottom:-8px;background:#fff;border:2px solid var(--blue);border-radius:50%;cursor:nwse-resize;z-index:5}.rotate-handle{position:absolute;width:16px;height:16px;right:-8px;top:-26px;background:#fff;border:2px solid var(--blue);border-radius:50%;cursor:grab;z-index:6}.rotate-handle:after{content:"↻";position:absolute;left:1px;top:-1px;font-size:11px;line-height:12px;color:var(--blue)}.selected{outline:2px dashed var(--blue);outline-offset:3px}.arrow{height:0;border-top:4px solid currentColor}.arrow:after{content:"";position:absolute;right:-2px;top:-8px;border-left:13px solid currentColor;border-top:6px solid transparent;border-bottom:6px solid transparent}.stone{border-radius:50%;background:currentColor;border:2px solid #6b342c}.blade{height:4px;background:currentColor;border-radius:4px}.footer{height:40px;background:#fff;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 14px;font-size:12px;color:#7b8994}.hint{color:#607585}.zoombar{display:inline-flex;align-items:center;gap:4px;border-left:1px solid var(--border);padding-left:8px}.zoombar button{border:1px solid var(--border);background:#fff;border-radius:7px;min-width:34px;height:34px;cursor:pointer;font-size:16px}.zoombar input{width:90px}.zoomval{font-size:12px;min-width:42px;text-align:center;color:#607585}.canvas-wrap.zooming{cursor:grab}.canvas-wrap.zooming:active{cursor:grabbing}.sheet{transform-origin:center center;will-change:transform}@media(max-width:850px){aside{width:210px}.logo{font-size:17px}.sub{display:none}.sheet{max-width:calc(100vw - 230px);max-height:calc(100vh - 180px)}.sheet img{max-width:calc(100vw - 232px);max-height:calc(100vh - 182px)}}
+
+/* iPad / touch improvements */
+html,body{width:100%;height:100%;overflow:hidden;-webkit-text-size-adjust:100%}.app{height:calc(100dvh - 64px)}.toolbar{padding-top:max(8px,env(safe-area-inset-top));padding-bottom:8px}.canvas-wrap{touch-action:none;overscroll-behavior:none}.sheet{touch-action:none}.tool,.select,.color,.pagebtn,.zoombar button{min-height:42px}.color{min-width:38px;width:38px;height:38px}.obj{touch-action:none}.draw{touch-action:none}@media(max-width:1024px){header{height:58px;padding:0 12px}.app{height:calc(100dvh - 58px)}aside{width:220px}.toolbar{gap:6px;padding-left:8px;padding-right:8px}.toolbar .tool{padding:9px 10px}.sheet{max-width:calc(100vw - 240px);max-height:calc(100dvh - 180px)}.sheet img{max-width:calc(100vw - 242px);max-height:calc(100dvh - 182px)}.footer{height:34px}}@media(max-width:700px){aside{width:0;padding:0;border:0;overflow:hidden}.sheet{max-width:calc(100vw - 16px);max-height:calc(100dvh - 150px)}.sheet img{max-width:calc(100vw - 18px);max-height:calc(100dvh - 152px)}.toolbar{overflow-x:auto;flex-wrap:nowrap}.spacer{display:none}.badge{display:none}.footer{display:none}}
+</style></head><body><header><div class="logo">URO logic by FTK</div><div class="sub">Medical consultation drawing tool • iPad PWA v34</div></header><div class="app"><aside><input id="search" class="search" placeholder="Search templates…"><div id="list"></div></aside><main><div class="toolbar"><button class="tool active" data-mode="pen">✎ Pen</button><button class="tool" data-mode="highlighter">▰ Highlight</button><button class="tool" data-mode="eraser">⌫ Eraser</button><button class="tool" data-mode="stone">● Stone</button><button class="tool" data-mode="blade">╱ Blade</button><button class="tool" data-mode="stent">ↄ JJ Stent</button><button class="tool" data-mode="arrow">➜ Arrow</button><span id="stentChoice" style="display:none"><select id="stentSide" class="select"><option value="right">Right JJ</option><option value="left">Left JJ</option></select></span><span id="colors"><button class="color active" data-color="#d64b4b" title="Red" style="background-color:#d64b4b"></button><button class="color" data-color="#2367a5" title="Blue" style="background-color:#2367a5"></button><button class="color" data-color="#20252a" title="Black" style="background-color:#20252a"></button><button class="color" data-color="#3c8b57" title="Green" style="background-color:#3c8b57"></button><button class="color" data-color="#f2c94c" title="Yellow" style="background-color:#f2c94c"></button></span><button class="tool" id="select">Select</button><button class="tool" id="pan">✋ Pan</button><button class="tool" id="undo">↶ Undo</button><button class="tool" id="redo">↷ Redo</button><button class="tool" id="clear">Clear</button><span class="zoombar"><button id="zoomOut" title="Zoom out">−</button><input id="zoomRange" type="range" min="50" max="200" step="10" value="100" title="Zoom"><button id="zoomIn" title="Zoom in">+</button><button id="zoomFit" title="Reset to fit">Fit</button><span class="zoomval" id="zoomVal">100%</span></span><span id="pageChoice" style="display:none"></span><span class="spacer"></span><span class="badge" id="title">Kidney, Ureter & Bladder</span><button class="tool" id="save">Save Image</button></div><div class="canvas-wrap"><div class="sheet"><img id="diagram" alt="Medical template"><canvas id="draw" class="layer draw"></canvas><div id="objects" class="layer objects"></div></div></div><div class="footer"><span>Images are displayed at high-quality browser scaling; original artwork is untouched. Annotations are independent objects/layers.</span><span id="status">Ready</span></div></main></div>
+<script>
+if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));}
+
+const IMAGES={T1:'assets/T1.jpg',T2:'assets/T2.png',T3:'assets/T3.png',T4:'assets/T4.jpg',RIGHT:'assets/RIGHT.png',LEFT:'assets/LEFT.png',T7:'assets/T7.png'};
+IMAGES.T5A='assets/T5A.png';
+IMAGES.T5B='assets/T5B.png';
+IMAGES.T5C='assets/T5C.png';
+
+IMAGES.T6A='assets/T6A.png';
+IMAGES.T6B='assets/T6B.png';
+IMAGES.T6C='assets/T6C.png';
+IMAGES.T6D='assets/T6D.png';
+IMAGES.T8A='assets/T8A.png';
+IMAGES.T8B='assets/T8B.png';
+IMAGES.T8C='assets/T8C.png';IMAGES.T8D='assets/T8D.png';
+IMAGES.T8E='assets/T8E.png';IMAGES.T9='assets/T9.png';
+const templates=[{cat:'URINARY TRACT',name:'Kidney, Ureter & Bladder',src:IMAGES.T1},{cat:'KIDNEY',name:'Partial Nephrectomy',src:IMAGES.T2},{cat:'KIDNEY',name:'Radical Nephrectomy',src:IMAGES.T3},{cat:'STONE',name:'Stone / URS — Annotation Template',src:IMAGES.T4},{cat:'BLADDER',name:'Bladder Tumor / TURBT',pages:[IMAGES.T5A,IMAGES.T5B,IMAGES.T5C]},{cat:'PROSTATE',name:'TURP',pages:[IMAGES.T6A,IMAGES.T6B,IMAGES.T6C,IMAGES.T6D]},{cat:'PENILE SURGERY',name:'Circumcision',src:IMAGES.T7},{cat:'PROSTATE',name:'Radical Prostatectomy',pages:[IMAGES.T8A,IMAGES.T8B,IMAGES.T8C,IMAGES.T8D,IMAGES.T8E]},{cat:'CATHETERS',name:'Foley Catheter',src:IMAGES.T9}];
+let current=0,page=0,mode='pen',color='#d64b4b',drawing=false,objects=[],selected=null,undoStack=[],redoStack=[];
+const img=document.getElementById('diagram'),sheet=document.querySelector('.sheet'),c=document.getElementById('draw'),ctx=c.getContext('2d'),objLayer=document.getElementById('objects');
+function status(t){document.getElementById('status').textContent=t}
+function resize(){const r=sheet.getBoundingClientRect(),d=window.devicePixelRatio||1;c.width=Math.max(1,Math.round(r.width*d));c.height=Math.max(1,Math.round(r.height*d));c.style.width=r.width+'px';c.style.height=r.height+'px';ctx.setTransform(d,0,0,d,0,0)}
+function snapshot(){return {canvas:c.toDataURL(),objects:objects.map(o=>({...o}))}}
+function pushUndo(){undoStack.push(snapshot());if(undoStack.length>30)undoStack.shift();redoStack=[]}
+function restore(s){const im=new Image();im.onload=()=>{ctx.clearRect(0,0,c.clientWidth,c.clientHeight);ctx.drawImage(im,0,0,c.clientWidth,c.clientHeight);objects=s.objects.map(o=>({...o}));selected=null;renderObjects()};im.src=s.canvas}
+function undo(){if(!undoStack.length)return;redoStack.push(snapshot());restore(undoStack.pop());status('Undone')}
+function redo(){if(!redoStack.length)return;undoStack.push(snapshot());restore(redoStack.pop());status('Redone')}
+function renderList(q=''){const l=document.getElementById('list');l.innerHTML='';let last='';templates.forEach((t,i)=>{if(q&&!(`${t.cat} ${t.name}`).toLowerCase().includes(q.toLowerCase()))return;if(t.cat!==last){const d=document.createElement('div');d.className='cat';d.textContent=t.cat;l.appendChild(d);last=t.cat}const b=document.createElement('button');b.className='template'+(i===current?' active':'');b.textContent=t.name;b.addEventListener('click',()=>selectTemplate(i));l.appendChild(b)})}
+function renderPages(){const pc=document.getElementById('pageChoice');const t=templates[current];pc.innerHTML='';if(!t.pages){pc.style.display='none';return}pc.style.display='inline-flex';pc.style.gap='5px';t.pages.forEach((p,i)=>{const b=document.createElement('button');b.className='pagebtn'+(i===page?' active':'');const labels=current===4?['Tumor anatomy','TURBT','Post-op CBI']:current===5?['BOO / bladder complications','BPH','TURP','Post-op CBI']:current===7?['Prostate cancer anatomy','Before / after radical prostatectomy','Pelvic lymph node anatomy','Trocar placement','Robot setup']:[];b.textContent=labels[i]||('Page '+(i+1));b.onclick=()=>selectPage(i);pc.appendChild(b)})}
+function setSheetClass(){sheet.classList.remove('turbt-anatomy','turbt-procedure','turp-boo','turp-bph','turp-procedure','turp-cbi','rp-trocar','rp-robot');if(current===4){if(page===0)sheet.classList.add('turbt-anatomy');if(page===1)sheet.classList.add('turbt-procedure')}if(current===5){if(page===0)sheet.classList.add('turp-boo');if(page===1)sheet.classList.add('turp-bph');if(page===2)sheet.classList.add('turp-procedure');if(page===3)sheet.classList.add('turp-cbi')}if(current===7){if(page===3)sheet.classList.add('rp-trocar');if(page===4)sheet.classList.add('rp-robot')}}
+function selectPage(i){page=i;const t=templates[current];setSheetClass();img.src=t.pages?page< t.pages.length?t.pages[page]:t.pages[0]:t.src;clearAll(false);renderPages();status('Ready')}
+function selectTemplate(i){current=i;page=0;const t=templates[i];setSheetClass();img.src=t.pages?t.pages[0]:t.src;document.getElementById('title').textContent=t.name;clearAll(false);renderList(document.getElementById('search').value);renderPages();status('Ready')}
+function clearAll(record=true){if(record)pushUndo();ctx.clearRect(0,0,c.clientWidth,c.clientHeight);objects=[];selected=null;renderObjects()}
+function point(e){const r=c.getBoundingClientRect();const z=zoom/100;return [(e.clientX-r.left)/z,(e.clientY-r.top)/z]}
+function addObject(type,x,y){pushUndo();const id=(crypto.randomUUID?crypto.randomUUID():String(Date.now()+Math.random()));let o={id,type,x,y,w:20,h:20,scale:1,rotation:0,color};if(type==='blade')o={...o,w:80,h:5};if(type==='arrow')o={...o,w:100,h:5};if(type==='stent')o={...o,w:70,h:260,side:document.getElementById('stentSide').value,color:'#2367a5'};objects.push(o);selected=id;renderObjects();status(type==='stent'?(o.side==='right'?'Right':'Left')+' JJ added':' '+type+' added')}
+function makeEl(o){const isSel=selected===o.id;const el=document.createElement('div');el.className='obj '+o.type+(isSel?' selected':'');el.dataset.id=o.id;el.style.left=o.x+'px';el.style.top=o.y+'px';el.style.width=(o.w*o.scale)+'px';el.style.height=(o.h*o.scale)+'px';el.style.color=o.color;el.style.transform='rotate('+o.rotation+'deg)';if(o.type==='stent'){const im=document.createElement('img');im.src=o.side==='right'?IMAGES.RIGHT:IMAGES.LEFT;im.decoding='async';el.appendChild(im)}if(isSel){const h=document.createElement('div');h.className='handle';h.addEventListener('pointerdown',e=>resizeObj(e,o));el.appendChild(h);const rh=document.createElement('div');rh.className='rotate-handle';rh.title='Rotate';rh.setAttribute('aria-label','Rotate object');rh.addEventListener('pointerdown',e=>rotateObj(e,o));el.appendChild(rh)}el.addEventListener('pointerdown',e=>dragObj(e,o));return el}
+function renderObjects(){objLayer.innerHTML='';objects.forEach(o=>objLayer.appendChild(makeEl(o)))}
+function dragObj(e,o){if(mode!=='select' && mode!=='stent' && mode!=='stone' && mode!=='blade' && mode!=='arrow')return;if(e.target.classList.contains('handle')||e.target.classList.contains('rotate-handle'))return;e.preventDefault();e.stopPropagation();if(mode==='select' && selected===o.id && e.detail>1){selected=null;renderObjects();status('Selection cleared');return}selected=o.id;renderObjects();const sx=e.clientX,sy=e.clientY,ox=o.x,oy=o.y;const move=ev=>{o.x=ox+(ev.clientX-sx)/(zoom/100);o.y=oy+(ev.clientY-sy)/(zoom/100);renderObjects()};const up=()=>{window.removeEventListener('pointermove',move);window.removeEventListener('pointerup',up);status('Moved')};window.addEventListener('pointermove',move);window.addEventListener('pointerup',up)}
+function resizeObj(e,o){e.preventDefault();e.stopPropagation();const start=e.clientX,s=o.scale;const move=ev=>{o.scale=Math.max(.2,Math.min(5,s+(ev.clientX-start)/(150*(zoom/100))));renderObjects()};const up=()=>{window.removeEventListener('pointermove',move);window.removeEventListener('pointerup',up);status('Resized')};window.addEventListener('pointermove',move);window.addEventListener('pointerup',up)}
+function rotateObj(e,o){e.preventDefault();e.stopPropagation();selected=o.id;renderObjects();const el=document.querySelector('.obj[data-id="'+o.id+'"]');const r=el.getBoundingClientRect();const cx=r.left+r.width/2,cy=r.top+r.height/2;const start=Math.atan2(e.clientY-cy,e.clientX-cx);const base=o.rotation;const move=ev=>{const a=Math.atan2(ev.clientY-cy,ev.clientX-cx);let deg=base+(a-start)*180/Math.PI;o.rotation=Math.round(deg*10)/10;renderObjects()};const up=()=>{window.removeEventListener('pointermove',move);window.removeEventListener('pointerup',up);status('Rotated')};window.addEventListener('pointermove',move);window.addEventListener('pointerup',up)}
+function down(e){if(['select','pan','stone','blade','stent','arrow'].includes(mode))return;e.preventDefault();drawing=true;pushUndo();const [x,y]=point(e);ctx.beginPath();ctx.moveTo(x,y)}
+function move(e){if(!drawing)return;const [x,y]=point(e);ctx.lineWidth=mode==='highlighter'?18:mode==='eraser'?28:4;ctx.lineCap='round';ctx.lineJoin='round';ctx.globalCompositeOperation=mode==='eraser'?'destination-out':'source-over';ctx.strokeStyle=mode==='highlighter'?'rgba(255,210,40,.35)':color;ctx.lineTo(x,y);ctx.stroke()}
+function up(){drawing=false}
+c.addEventListener('pointerdown',e=>{if(mode==='pan'){e.preventDefault();e.stopPropagation();return}if(mode==='select'){selected=null;renderObjects();status('Selection cleared');return}if(['stone','blade','stent','arrow'].includes(mode)){e.preventDefault();e.stopPropagation();const [x,y]=point(e);addObject(mode,x,y);return}down(e)});c.addEventListener('pointermove',move);c.addEventListener('pointerup',up);c.addEventListener('pointercancel',up);
+document.querySelectorAll('[data-mode]').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('[data-mode]').forEach(x=>x.classList.remove('active')); b.classList.add('active');
+  mode=b.dataset.mode; panning=false; c.style.pointerEvents='auto'; objLayer.style.pointerEvents='none';
+  selected=null; renderObjects(); document.getElementById('pan').classList.remove('active');
+  document.getElementById('stentChoice').style.display=mode==='stent'?'inline':'none';
+  status(mode==='pen'?'Draw with Pencil or mouse':'Tap the image to add '+mode);
+}));
+document.querySelectorAll('.color').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.color').forEach(x=>x.classList.remove('active'));b.classList.add('active');color=b.dataset.color}));
+document.getElementById('select').addEventListener('click',()=>{const b=document.getElementById('select');if(mode==='select'){b.classList.remove('active');mode='pen';document.querySelectorAll('[data-mode]').forEach(x=>x.classList.toggle('active',x.dataset.mode==='pen'));selected=null;renderObjects();status('Select off — draw mode restored')}else{document.querySelectorAll('[data-mode]').forEach(x=>x.classList.remove('active'));document.getElementById('pan').classList.remove('active');b.classList.add('active');mode='select';selected=null;renderObjects();document.getElementById('stentChoice').style.display='none';status('Select an object, drag to move, use handle to resize')}});
+document.getElementById('undo').addEventListener('click',undo);document.getElementById('redo').addEventListener('click',redo);document.getElementById('clear').addEventListener('click',()=>clearAll(true));document.getElementById('search').addEventListener('input',e=>renderList(e.target.value));window.addEventListener('resize',resize);img.addEventListener('load',resize);
+document.addEventListener('keydown',e=>{if(e.key==='Delete'&&selected){pushUndo();objects=objects.filter(o=>o.id!==selected);selected=null;renderObjects()}if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='z'){e.preventDefault();undo()}if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='y'){e.preventDefault();redo()}});
+let zoom=100;
+let panX=0, panY=0;
+let panning=false, panStartX=0, panStartY=0, panBaseX=0, panBaseY=0;
+function applyZoom(){sheet.style.transform='translate('+panX+'px,'+panY+'px) scale('+(zoom/100)+')';document.getElementById('zoomRange').value=zoom;document.getElementById('zoomVal').textContent=zoom+'%';}
+function setZoom(v){zoom=Math.max(50,Math.min(200,Math.round(v/10)*10));applyZoom();}
+function resetPan(){panX=0;panY=0;applyZoom();}
+document.getElementById('zoomIn').onclick=()=>setZoom(zoom+10);
+document.getElementById('zoomOut').onclick=()=>setZoom(zoom-10);
+document.getElementById('zoomFit').onclick=()=>{setZoom(100);resetPan();};
+document.getElementById('zoomRange').oninput=e=>setZoom(+e.target.value);
+const wrap=document.querySelector('.canvas-wrap');
+// Desktop zoom: mouse wheel over the canvas zooms. Prevent browser scrolling/zooming.
+wrap.addEventListener('wheel',e=>{
+  e.preventDefault();
+  setZoom(zoom+(e.deltaY<0?10:-10));
+},{passive:false});
+function beginPan(e){
+  if(mode!=='pan') return false;
+  if(e.pointerType==='mouse' && e.button!==0) return false;
+  e.preventDefault(); e.stopPropagation();
+  panning=true; panStartX=e.clientX; panStartY=e.clientY;
+  panBaseX=panX; panBaseY=panY;
+  try{wrap.setPointerCapture(e.pointerId)}catch(_){}
+  wrap.classList.add('zooming');
+  return true;
+}
+function movePan(e){
+  if(!panning)return;
+  e.preventDefault();
+  panX=panBaseX+(e.clientX-panStartX);
+  panY=panBaseY+(e.clientY-panStartY);
+  applyZoom();
+}
+function endPan(e){
+  if(!panning)return;
+  panning=false; wrap.classList.remove('zooming');
+  try{wrap.releasePointerCapture(e.pointerId)}catch(_){}
+}
+// Pan is handled at the wrapper level. Drawing/object layers are disabled while in Pan mode.
+wrap.addEventListener('pointerdown',e=>{if(mode==='pan')beginPan(e)});
+wrap.addEventListener('pointermove',movePan);
+wrap.addEventListener('pointerup',endPan);
+wrap.addEventListener('pointercancel',endPan);
+wrap.addEventListener('contextmenu',e=>{if(mode==='pan')e.preventDefault()});
+// Two-finger touch pan/pinch on iPad. Single-finger drag works only in Pan mode.
+let pinchStartDist=0,pinchStartZoom=100,pinchStartX=0,pinchStartY=0;
+wrap.addEventListener('touchstart',e=>{
+  if(e.touches.length===2){
+    e.preventDefault();
+    const a=e.touches[0],b=e.touches[1];
+    pinchStartDist=Math.hypot(a.clientX-b.clientX,a.clientY-b.clientY);
+    pinchStartZoom=zoom; pinchStartX=(a.clientX+b.clientX)/2; pinchStartY=(a.clientY+b.clientY)/2;
+    panBaseX=panX; panBaseY=panY;
+  }
+},{passive:false});
+wrap.addEventListener('touchmove',e=>{
+  if(e.touches.length!==2)return;
+  e.preventDefault();
+  const a=e.touches[0],b=e.touches[1];
+  const dist=Math.hypot(a.clientX-b.clientX,a.clientY-b.clientY);
+  const midX=(a.clientX+b.clientX)/2,midY=(a.clientY+b.clientY)/2;
+  setZoom(pinchStartZoom*(dist/pinchStartDist));
+  panX=panBaseX+(midX-pinchStartX); panY=panBaseY+(midY-pinchStartY); applyZoom();
+},{passive:false});
+wrap.addEventListener('touchend',e=>{if(e.touches.length<2)pinchStartDist=0},{passive:false});
+
+document.getElementById('pan').onclick=()=>{
+  const b=document.getElementById('pan');
+  if(mode==='pan'){
+    b.classList.remove('active'); mode='pen'; panning=false;
+    c.style.pointerEvents='auto'; objLayer.style.pointerEvents='none';
+    document.querySelectorAll('[data-mode]').forEach(x=>x.classList.toggle('active',x.dataset.mode==='pen'));
+    status('Pan off — draw mode restored');
+  }else{
+    mode='pan'; panning=false; selected=null; renderObjects();
+    document.querySelectorAll('.tool[data-mode]').forEach(x=>x.classList.remove('active'));
+    document.getElementById('select').classList.remove('active'); b.classList.add('active');
+    document.getElementById('stentChoice').style.display='none';
+    c.style.pointerEvents='none'; objLayer.style.pointerEvents='none';
+    status('Pan mode — drag with left mouse or one finger; drawing disabled');
+  }
+};
+
+function save(){const out=document.createElement('canvas');const w=img.naturalWidth,h=img.naturalHeight;out.width=w*2;out.height=h*2;const x=out.getContext('2d');x.drawImage(img,0,0,out.width,out.height);const ir=img.getBoundingClientRect(),sr=sheet.getBoundingClientRect(),sx=out.width/ir.width,sy=out.height/ir.height;x.drawImage(c,(ir.left-sr.left),(ir.top-sr.top),ir.width,ir.height,0,0,out.width,out.height);objects.forEach(o=>{const el=document.querySelector('.obj[data-id="'+o.id+'"]');if(!el)return;const er=el.getBoundingClientRect();const xx=(er.left-ir.left)*sx,yy=(er.top-ir.top)*sy,ww=er.width*sx,hh=er.height*sy;if(o.type==='stent'){const im2=new Image();im2.src=o.side==='right'?IMAGES.RIGHT:IMAGES.LEFT;x.drawImage(im2,xx,yy,ww,hh)}else if(o.type==='stone'){x.fillStyle=o.color;x.beginPath();x.arc(xx+ww/2,yy+hh/2,ww/2,0,Math.PI*2);x.fill()}else{x.save();x.translate(xx,yy);x.rotate(o.rotation*Math.PI/180);x.fillStyle=o.color;if(o.type==='blade')x.fillRect(0,0,ww,Math.max(3,hh));if(o.type==='arrow'){x.fillRect(0,hh/2-3,ww-10,6);x.beginPath();x.moveTo(ww,hh/2);x.lineTo(ww-15,hh/2-10);x.lineTo(ww-15,hh/2+10);x.closePath();x.fill()}x.restore()}});const a=document.createElement('a');a.download='uro-patient-explanation.png';a.href=out.toDataURL('image/png');a.click();status('Saved')}
+document.getElementById('save').addEventListener('click',save);renderList();selectTemplate(0);
+</script></body></html>
